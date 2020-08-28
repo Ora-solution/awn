@@ -1,0 +1,2673 @@
+/*!
+ * Theme-Standard.css 
+ * apex-builder-app_ui v20.1.0
+ * https://apex.oracle.com/
+ * Copyright (c) Oracle
+*/
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/******************************************************************************
+Button for Theme
+******************************************************************************/
+.a-Button {
+  border: none;
+  color: #444444;
+  border-radius: 2px;
+  background-clip: padding-box;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  -webkit-font-smoothing: antialiased;
+}
+
+.a-Button:hover {
+  z-index: 100;
+}
+
+.a-Button:focus {
+  z-index: 110;
+}
+
+.a-Button:active {
+  z-index: 100;
+}
+
+.a-Button.is-active,
+.a-Button.is-active:active {
+  z-index: 100;
+}
+
+.a-Button--hot {
+  font-weight: bold;
+}
+
+.a-Button--noUI,
+.a-Button--noUI:hover,
+.a-Button--noUI:active {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+}
+
+.a-Button.a-Button--popupLOV {
+  color: #404040;
+}
+
+.a-Button.a-Button--calendar,
+.a-Button.a-Button--colorPicker,
+.a-Button.a-Button--listManager,
+.a-Button.a-Button--popupLOV {
+  padding: 4px 8px;
+}
+
+.a-Button.a-Button--shuttle {
+  padding: 2px 4px;
+}
+
+.a-Button--listManager {
+  background: #F0F0F0;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  margin-left: 4px;
+}
+
+.a-Button.a-Button--calendar,
+.a-Button.a-Button--colorPicker {
+  margin-left: -1px;
+}
+
+.a-Button {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 8px 12px;
+}
+
+.a-Button .a-Icon--pullRight {
+  float: right !important;
+  margin-left: 4px;
+  margin-right: 0 !important;
+}
+
+.a-Button--withIcon {
+  padding: 8px 10px;
+  line-height: 16px;
+}
+
+.a-Button--withIcon .a-Icon {
+  margin-right: 4px;
+}
+
+.u-RTL .a-Button--withIcon .a-Icon {
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+.a-Button--withIcon.a-Button--shuttle .a-Icon {
+  margin: 0 4px;
+}
+
+.a-Button--withIcon.a-Button--slim {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.a-Button--iconTextButton {
+  padding-right: 8px;
+}
+
+.a-Button--noLabel .a-FAIcon,
+.a-Button--noLabel .a-Icon {
+  margin-right: 0;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Calendar
+******************************************************************************/
+.fc-event.fc-apex-events-default {
+  background-color: #2578CF;
+  border-color: #2578CF;
+  color: #FFF;
+}
+
+.fc-event.fc-apex-events-gcal {
+  background-color: #01DF01;
+  border-color: #01DF01;
+  color: #4F4F4F;
+}
+
+.fc-event.fc-apex-events-webservice {
+  background-color: #FAB252;
+  border-color: #FAB252;
+  color: #4F4F4F;
+}
+
+.fc .fc-event.apex-cal-black {
+  background-color: #303030;
+  border-color: #303030;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-blue {
+  background-color: #4183D7;
+  border-color: #4183D7;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-bluesky {
+  background-color: #6BB9F0;
+  border-color: #6BB9F0;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-brown {
+  background-color: #D88935;
+  border-color: #D88935;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-cyan {
+  background-color: #1ABC9C;
+  border-color: #1ABC9C;
+  color: #404040;
+}
+
+.fc .fc-event.apex-cal-darkblue {
+  background-color: #1F5F97;
+  border-color: #1F5F97;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-gray {
+  background-color: #A0A0A0;
+  border-color: #A0A0A0;
+  color: #404040;
+}
+
+.fc .fc-event.apex-cal-green {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-lime {
+  background-color: #28A346;
+  border-color: #28A346;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-orange {
+  background-color: #F39C12;
+  border-color: #F39C12;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-red {
+  background-color: #D91E18;
+  border-color: #D91E18;
+  color: #FFFFFF;
+}
+
+.fc .fc-event.apex-cal-silver {
+  background-color: #BDC3C7;
+  border-color: #BDC3C7;
+  color: #404040;
+}
+
+.fc .fc-event.apex-cal-white {
+  background-color: #F0F0F0;
+  border-color: #F0F0F0;
+  color: #404040;
+}
+
+.fc .fc-event.apex-cal-yellow {
+  background-color: #F1C40F;
+  border-color: #F1C40F;
+  color: #404040;
+}
+
+.fc .fc-helper {
+  background-color: #4183D7 !important;
+  border-color: #0572CE !important;
+  color: #FFFFFF !important;
+  opacity: 0.5;
+}
+
+.fc .ui-button:active,
+.fc .ui-button:focus,
+.fc-view:active, .fc-view:focus {
+  outline: 1px solid #0572CE;
+}
+
+.fc-event:active, .fc-event:focus {
+  background-color: #4183D7 !important;
+  border-color: #0572CE !important;
+  color: #FFFFFF !important;
+  opacity: 0.5;
+}
+
+.fc-list-item.fc-apex-events-default .fc-event-dot {
+  background-color: #2578CF;
+}
+
+.fc-list-item.fc-apex-events-gcal .fc-event-dot {
+  background-color: #01DF01;
+}
+
+.fc-list-item.fc-apex-events-webservice .fc-event-dot {
+  background-color: #FAB252;
+}
+
+.fc-list-item.apex-cal-black .fc-event-dot {
+  background-color: #303030;
+}
+
+.fc-list-item.apex-cal-blue .fc-event-dot {
+  background-color: #4183D7;
+}
+
+.fc-list-item.apex-cal-bluesky .fc-event-dot {
+  background-color: #6BB9F0;
+}
+
+.fc-list-item.apex-cal-brown .fc-event-dot {
+  background-color: #D88935;
+}
+
+.fc-list-item.apex-cal-cyan .fc-event-dot {
+  background-color: #1ABC9C;
+}
+
+.fc-list-item.apex-cal-darkblue .fc-event-dot {
+  background-color: #1F5F97;
+}
+
+.fc-list-item.apex-cal-gray .fc-event-dot {
+  background-color: #A0A0A0;
+}
+
+.fc-list-item.apex-cal-green .fc-event-dot {
+  background-color: #2ECC71;
+}
+
+.fc-list-item.apex-cal-lime .fc-event-dot {
+  background-color: #28A346;
+}
+
+.fc-list-item.apex-cal-orange .fc-event-dot {
+  background-color: #F39C12;
+}
+
+.fc-list-item.apex-cal-red .fc-event-dot {
+  background-color: #D91E18;
+}
+
+.fc-list-item.apex-cal-silver .fc-event-dot {
+  background-color: #BDC3C7;
+}
+
+.fc-list-item.apex-cal-white .fc-event-dot {
+  background-color: #F0F0F0;
+}
+
+.fc-list-item.apex-cal-yellow .fc-event-dot {
+  background-color: #F1C40F;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+.a-DevToolbar-list {
+  overflow: hidden;
+}
+
+.a-DevToolbar .a-Button.a-Button--devToolbar {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFF;
+  border-radius: 0;
+}
+
+.a-DevToolbar .a-Button.a-Button--devToolbar.is-active, .a-DevToolbar .a-Button.a-Button--devToolbar:active, .a-DevToolbar .a-Button.a-Button--devToolbar:focus, .a-DevToolbar .a-Button.a-Button--devToolbar:hover {
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.a-DevToolbar-uiSelector {
+  border-color: #0572CE;
+  border-radius: 2px;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/* ==========================================================================
+   0. Container
+   ========================================================================== */
+/* Filters Container
+   This is rendered once per Filter region type
+   ========================================================================== */
+/* Filters Control WRapper
+      This is rendered once per filter control
+      ========================================================================== */
+.a-FS-control + .a-FS-control {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Toggle Filter (Expand / Collapse filter control)
+      ========================================================================== */
+.a-FS-toggle {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #FFF;
+  border-radius: 2px;
+}
+
+.a-FS-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.a-FS-toggle:focus {
+  background-color: #0076DF;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 118, 223, 0.15);
+          box-shadow: 0 1px 1px 0 rgba(0, 118, 223, 0.15);
+}
+
+/* Clear Filters / Show More Button
+      ========================================================================== */
+.a-FS-clearAll,
+.a-FS-clearButton,
+.a-FS-toggleOverflow {
+  background-color: transparent;
+  color: #0076DF;
+}
+
+/* Current Filters
+   ========================================================================= */
+.a-FS .a-FS-currentList {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.a-FS-currentList.a-FS-currentList--includeName .a-FS-currentItem {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+      2. Body
+      ========================================================================== */
+/* ==========================================================================
+      2.1 Searching and Filtering
+      ========================================================================== */
+.a-FS-search span.apex-item-icon,
+.a-FS-filter span.apex-item-icon {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* Searching
+      ========================================================================== */
+.a-FS-search {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+
+File Name:    GridView.scss
+Purpose:      Base styles for Grid View (used in Interactive Grid component)
+
+******************************************************************************/
+/* ==========================================================================
+   Color Variables
+   ========================================================================== */
+/* Table Container
+   ========================================================================== */
+.a-GV-w-frozen .a-GV-table,
+.a-GV-w-hdr .a-GV-table {
+  border-color: #E0E0E0 !important;
+}
+
+.a-GV-table .a-GV-cell {
+  border-color: #EAEAEA;
+}
+
+.a-GV-header,
+.a-GV-headerGroup {
+  border-color: #E0E0E0;
+}
+
+.a-GV-table tr.is-selected .a-GV-cell {
+  background-color: #ecf3ff;
+}
+
+.a-GV-table .a-GV-cell.is-focused,
+.a-GV-table .a-GV-header.is-focused,
+.a-GV-table .a-GV-headerGroup.is-focused,
+.a-GV-table .a-GV-controlBreakHeader.is-focused {
+  -webkit-box-shadow: 0 0 0 1px #0572CE inset;
+          box-shadow: 0 0 0 1px #0572CE inset;
+}
+
+/* Column Header
+   ========================================================================== */
+.a-GV-columnControls .a-Button {
+  background-color: #F4F4F4;
+  color: #707070;
+}
+
+.a-GV-columnControls .a-Button.is-active {
+  background-color: #E0E0E0;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.a-GV-header.is-active {
+  background-color: #FFF;
+}
+
+/* Control Breaks
+   ========================================================================== */
+.a-GV-controlBreakHeader .a-Button span {
+  color: #707070;
+}
+
+.a-GV-table th.a-GV-controlBreakHeader {
+  background-color: #F4F4F4;
+  border-color: #EAEAEA;
+  color: #707070;
+}
+
+/* Aggregates
+   ========================================================================== */
+.is-aggregate .a-GV-cell {
+  background-color: #F8F8F8;
+}
+
+.is-aggregate .a-GV-rowHeader {
+  color: #707070;
+}
+
+/* Overall Aggregate
+   ========================================================================== */
+.is-grandTotal .a-GV-cell {
+  background-color: #E0E0E0;
+}
+
+/* Modifiers
+   ========================================================================== */
+.a-GV--hideDeleted .a-GV-table tr.is-deleted {
+  display: none;
+}
+
+/* Footer
+   ========================================================================== */
+.a-GV-footer {
+  border-color: #E0E0E0;
+  background-color: #FFFFFF;
+}
+
+/* Column Move Handle
+   ========================================================================== */
+.a-GV-header-dragHelper {
+  color: #404040;
+  background-color: #F4F4F4;
+  border-color: #E0E0E0;
+}
+
+.a-GV-header-dragHelper.ui-draggable-dragging {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: #0572CE;
+}
+
+.a-GV-colMoveMarker {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.a-GV-hdr {
+  background-color: #F4F4F4;
+}
+
+.a-GV-bdy {
+  background-color: #FFFFFF;
+}
+
+/* Row Selector (checkbox)
+   ========================================================================== */
+.a-GV-rowSelector:before {
+  color: #404040;
+}
+
+.is-selected .a-GV-rowSelector {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.a-GV-rownum {
+  color: #707070;
+}
+
+/* Selected Cells
+   ========================================================================== */
+.a-GV.a-GV--selectCells .a-GV-cell.is-selected {
+  background-color: #D9E9F7;
+}
+
+/* Todo also don't want border around checkbox when a-GV--selectCells */
+.a-GV.a-GV--selectCells .is-selected .a-GV-rowSelector:before,
+.a-GV.a-GV--selectCells .a-GV-rowSelector:hover:before,
+.a-GV.a-GV--selectCells .is-hover .a-GV-rowSelector:before {
+  opacity: 0;
+}
+
+/* Editing
+   ========================================================================== */
+.a-GV-table .a-GV-cell.is-active {
+  padding: 0;
+  background-color: #E8E8E8;
+}
+
+.a-GV-cell .a-GV-columnItem input:not([type="radio"]):not([type="checkbox"]):focus,
+.a-GV-cell .a-GV-columnItem select[size='1']:focus {
+  outline: none;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0 1px #0572CE inset;
+          box-shadow: 0 0 0 1px #0572CE inset;
+}
+
+.a-GV-floatingItem:not(.is-expanded) {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0 1px #0572CE inset;
+          box-shadow: 0 0 0 1px #0572CE inset;
+}
+
+.a-GV-floatingItem:not(.is-expanded) .a-GV-expandCollapse {
+  background-color: #FFFFFF;
+}
+
+.a-GV-floatingItem:not(.is-expanded) .a-GV-expandCollapse:hover {
+  background-color: #F4F4F4;
+}
+
+.a-GV-floatingItem.is-expanded {
+  border-color: #0572CE;
+}
+
+.a-GV-floatingItem.is-expanded .a-GV-expandCollapse {
+  background-color: #404040;
+  color: #FFF;
+}
+
+/* Read Only Rows
+   ========================================================================== */
+.a-GV--editMode .a-GV-row.is-readonly .a-GV-cell,
+.a-GV--editMode .a-GV-cell.is-readonly {
+  background-color: #F8F8F8;
+  color: #707070;
+}
+
+/* Updated and Changed States
+   ========================================================================== */
+.a-GV-row.is-updated .a-GV-cell {
+  background-color: rgba(5, 114, 206, 0.05);
+}
+
+.a-GV-cell.is-changed:not(.is-active):before,
+.a-GV-row.is-updated .a-GV-selHeader:before {
+  color: #0572CE;
+}
+
+/* Row Inserted
+   ========================================================================== */
+.a-GV-row.is-inserted .a-GV-cell {
+  background-color: rgba(76, 217, 100, 0.1);
+}
+
+/* Required, Error Indicator
+   ========================================================================== */
+.a-GV-row.is-updated.is-error .a-GV-rowHeader .a-GV-rownum,
+.a-GV-row.is-updated.is-error .a-GV-selHeader:before,
+.a-GV--editMode .a-GV-header.is-required:before {
+  color: red;
+}
+
+/* Warning Indicator and Icon
+   ========================================================================== */
+.a-GV-cell.is-warning:not(.is-active),
+.a-GV-cell.is-warning:not(.is-active):before {
+  color: #FDB309;
+}
+
+.a-GV-cell.is-error:not(.is-active),
+.a-GV-cell.is-error:not(.is-active):before {
+  color: #FC181B;
+}
+
+/* Status
+   ========================================================================== */
+.a-GV-status {
+  color: #707070;
+}
+
+/* Pagination
+   ========================================================================== */
+.a-GV-pageButton {
+  color: #404040;
+}
+
+.a-GV-pageButton:hover {
+  background-color: #F4F4F4;
+}
+
+.a-GV-pageButton:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 1px #0572CE inset;
+          box-shadow: 0 0 0 1px #0572CE inset;
+}
+
+.a-GV-pageSelector-item.is-selected .a-GV-pageButton {
+  background-color: #E0E0E0;
+}
+
+.a-GV-pageRange {
+  color: #707070;
+}
+
+/* Load More
+   ========================================================================== */
+.a-GV-loadMore {
+  border-top-color: #EAEAEA;
+}
+
+.a-GV-loadMoreButton {
+  color: #383838;
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125) inset;
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125) inset;
+}
+
+.a-GV-loadMoreButton:hover {
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba(0, 0, 0, 0.125) inset;
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba(0, 0, 0, 0.125) inset;
+}
+
+.a-GV-loadMoreButton:focus {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 1px #0572CE inset, 0 0 1px 0 rgba(5, 114, 206, 0.25);
+          box-shadow: 0 0 0 1px #0572CE inset, 0 0 1px 0 rgba(5, 114, 206, 0.25);
+}
+
+.a-GV-loadMoreButton:active {
+  background-color: #dedede;
+}
+
+.a-GV-loadMoreButton:active:focus {
+  -webkit-box-shadow: 0 0 0 1px #0572CE inset, 0 0 1px 0 rgba(5, 114, 206, 0.25);
+          box-shadow: 0 0 0 1px #0572CE inset, 0 0 1px 0 rgba(5, 114, 206, 0.25);
+}
+
+/* Tooltips
+   ========================================================================== */
+.a-GV-tooltip.ui-tooltip {
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  color: #D0D0D0;
+}
+
+.a-GV-tooltip.ui-tooltip.arrow-right:before, .a-GV-tooltip.ui-tooltip.arrow-left:before, .a-GV-tooltip.ui-tooltip.arrow-top:before, .a-GV-tooltip.ui-tooltip.arrow-bottom:before {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.a-GV-tooltip.ui-tooltip.is-error {
+  background-color: #EA1818;
+  color: #FFFFFF;
+}
+
+.a-GV-tooltip.ui-tooltip.is-error.arrow-right:before, .a-GV-tooltip.ui-tooltip.is-error.arrow-left:before, .a-GV-tooltip.ui-tooltip.is-error.arrow-top:before, .a-GV-tooltip.ui-tooltip.is-error.arrow-bottom:before {
+  color: #EA1818;
+}
+
+.a-GV-tooltip.ui-tooltip.is-warning {
+  background-color: #FFF8DF;
+  color: #463403;
+}
+
+.a-GV-tooltip.ui-tooltip.is-warning.arrow-right:before, .a-GV-tooltip.ui-tooltip.is-warning.arrow-left:before, .a-GV-tooltip.ui-tooltip.is-warning.arrow-top:before, .a-GV-tooltip.ui-tooltip.is-warning.arrow-bottom:before {
+  color: #FFF8DF;
+}
+
+/* Messages
+   ========================================================================== */
+.a-GV-altMessage-text {
+  color: #707070;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Interactive Grid
+******************************************************************************/
+.a-IG {
+  border-color: #E0E0E0;
+  background-color: #FFF;
+}
+
+.a-IG-header {
+  border-color: #E0E0E0;
+  background-color: #FAFAFA;
+}
+
+.a-IG-gridView .a-GV-footer {
+  border-color: #E0E0E0;
+}
+
+/* Default Icon View Styling
+   ========================================================================== */
+.a-TMV-defaultIconView .a-IconList-item.is-selected, .a-TMV-defaultIconView .a-IconList-item.is-selected.is-focused {
+  /* Style the background color for 
+       selected, and selected + focused states */
+  background-color: #ecf3ff;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/* Region
+   ========================================================================== */
+.a-IGDialog-header,
+.a-IGDialog-footer,
+.a-IGDialog-side {
+  border-color: #E8E8E8;
+}
+
+/* Dialog List
+   ========================================================================== */
+.a-IGDialog-list-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  background-clip: padding-box;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+.a-IGDialog-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.a-IGDialog-list-item.is-active {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.a-IGDialog-list-link {
+  color: #404040;
+}
+
+/* Fancy Checkbox
+   ========================================================================== */
+.a-IGDialog-label-checkbox {
+  border: 1px solid #C0C0C0;
+}
+
+.a-IGDialog-label-checkbox:before {
+  color: #404040;
+}
+
+.a-IGDialog-label-checkbox:active {
+  background-color: #E0E0E0;
+}
+
+.a-IGDialog-input-checkbox:focus + .a-IGDialog-label-checkbox {
+  border-color: #4696fc;
+  -webkit-box-shadow: 0 0 2px 0 rgba(70, 150, 252, 0.5);
+          box-shadow: 0 0 2px 0 rgba(70, 150, 252, 0.5);
+}
+
+/* Forms
+   ========================================================================== */
+.a-IGDialog .a-Button--helpButton {
+  opacity: .25;
+}
+
+.a-IGDialog .a-Button--helpButton:hover {
+  opacity: 1;
+}
+
+/* Toolbars
+   ========================================================================== */
+.a-IGDialog-toolbar--primary .a-Toolbar-buttonGroup .a-Toolbar-button {
+  border: 1px solid transparent;
+}
+
+.a-IGDialog-toolbar--primary .a-Toolbar-buttonGroup .a-Toolbar-input:checked + .a-Toolbar-button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #FFF;
+  border: 1px solid #E0E0E0;
+  margin-bottom: -1px;
+  border-bottom-color: #FFF;
+}
+
+/* Toolbar Radios
+   ========================================================================== */
+.a-IGDialog-buttonGroup .a-IGDialog-input:checked + .a-IGDialog-button {
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  background-color: #D0D0D0;
+}
+
+/* IGDialog Buttons
+   ========================================================================== */
+.a-Button.a-IGDialog-button {
+  -webkit-box-shadow: 0 0 0 1px #E4E4E4 inset;
+          box-shadow: 0 0 0 1px #E4E4E4 inset;
+  background-color: #F4F4F4;
+}
+
+/* Side Bottom Toolbar
+   ========================================================================== */
+.a-IGDialog-side .a-Toolbar {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Interactive Report
+******************************************************************************/
+.a-IRR {
+  border-color: #E0E0E0;
+  background-color: #FFF;
+}
+
+.a-IRR-toolbar {
+  border-color: #E0E0E0;
+  background-color: #F0F0F0;
+}
+
+/* ==========================================================================
+   Search Field + Button
+   ========================================================================== */
+.a-IRR-search-field {
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.a-IRR-search-field:focus {
+  border-color: #4696fc;
+  -webkit-box-shadow: 0 0 0 1px #4696fc inset, -2px 0 0 #4696fc inset, 2px 0 0 #4696fc inset, 0 0 2px 0 rgba(70, 150, 252, 0.5);
+          box-shadow: 0 0 0 1px #4696fc inset, -2px 0 0 #4696fc inset, 2px 0 0 #4696fc inset, 0 0 2px 0 rgba(70, 150, 252, 0.5);
+}
+
+.a-IRR-button--search {
+  vertical-align: top;
+}
+
+/* ==========================================================================
+   Select Lists (Rows and Saved Reports)
+   ========================================================================== */
+.a-IRR-selectList {
+  border-color: #E0E0E0;
+}
+
+.a-IRR-selectList:focus {
+  border-color: #4696fc;
+  -webkit-box-shadow: 0 0 0 1px #4696fc, 0 0 2px 0 rgba(70, 150, 252, 0.5);
+          box-shadow: 0 0 0 1px #4696fc, 0 0 2px 0 rgba(70, 150, 252, 0.5);
+}
+
+/* ==========================================================================
+   IRR Download Dialog
+   ========================================================================== */
+.a-IRR-iconList-item + .a-IRR-iconList-item {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.u-RTL .a-IRR-iconList-item + .a-IRR-iconList-item {
+  border-left: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.a-IRR-iconList-item .a-IRR-iconList-link {
+  background-color: rgba(0, 0, 0, 0.025) !important;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.05) 0 -1px 0 0;
+          box-shadow: inset rgba(0, 0, 0, 0.05) 0 -1px 0 0;
+}
+
+.a-IRR-iconList-item .a-IRR-iconList-link:hover {
+  background-color: #fff !important;
+}
+
+.a-IRR-iconList-item .a-IRR-iconList-link.is-active {
+  background-color: #fff !important;
+  -webkit-box-shadow: inset #0572CE 0 2px 0 0;
+          box-shadow: inset #0572CE 0 2px 0 0;
+}
+
+/* ==========================================================================
+   IRR Download Dialog - Email Form
+   ========================================================================== */
+.a-IRR-dialogRow--header {
+  color: #404040;
+}
+
+.a-IRR-dialogInfo:first-child {
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================================================
+   IRR Radio Icon List
+   ========================================================================== */
+.a-IRR-radioIconList-item {
+  background-color: rgba(0, 0, 0, 0.025);
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.05) 0 -1px 0 0;
+          box-shadow: inset rgba(0, 0, 0, 0.05) 0 -1px 0 0;
+}
+
+.a-IRR-radioIconList-item + .a-IRR-radioIconList-item {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.u-RTL .a-IRR-radioIconList-item + .a-IRR-radioIconList-item {
+  border-left: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.a-IRR-radioIconList-item input[type=radio]:checked + label {
+  background-color: #fff;
+  -webkit-box-shadow: inset #0572CE 0 2px 0 0;
+          box-shadow: inset #0572CE 0 2px 0 0;
+}
+
+/* ==========================================================================
+   IRR Dialog Shuttle
+   ========================================================================== */
+.a-IRR-dialogListContainer .u-Form-label {
+  background-color: rgba(0, 0, 0, 0.025);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   IRR Dialog List Select
+   ========================================================================== */
+.a-IRR-dialogList {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.a-IRR-dialogList:focus {
+  border-color: #0572CE;
+}
+
+.a-IRR-dialogList a {
+  color: #404040 !important;
+}
+
+.a-IRR-dialogList a:focus {
+  -webkit-box-shadow: inset 0 0 0 1px #0572CE;
+          box-shadow: inset 0 0 0 1px #0572CE;
+}
+
+.a-IRR-dialogList a:hover {
+  background-color: #0572CE;
+  color: #FFF !important;
+}
+
+/* ==========================================================================
+   IRR Dropdown Menu
+   ========================================================================== */
+.a-IRR-col-values-drop {
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.a-IRR-col-value {
+  color: #404040 !important;
+}
+
+.a-IRR-col-value:hover {
+  background-color: #0572CE;
+  color: #FFF !important;
+}
+
+.a-IRR-dialogError {
+  background-color: #FFEFEF;
+  color: #4C4242;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/******************************************************************************
+Icon List
+******************************************************************************/
+.a-IconList {
+  margin: 4px;
+}
+
+.a-IconList-item {
+  padding: 8px 4px;
+  margin: 0 4px 4px 0;
+  color: #6F6F6F;
+  border-radius: 3px;
+}
+
+.a-IconList-item:hover {
+  color: #444444;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.a-IconList-item:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 1px #0572ce inset;
+          box-shadow: 0 0 0 1px #0572ce inset;
+}
+
+.a-IconList-item.is-selected {
+  background-color: #ecf3ff;
+}
+
+.a-IconList-item.is-selected.is-focused {
+  color: #444444;
+  -webkit-box-shadow: 0 0 0 1px #0572ce inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px #0572ce inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background-color: #FFF;
+}
+
+.a-IconList-item a {
+  display: block;
+}
+
+.a-IconList-item a:hover {
+  text-decoration: none;
+}
+
+.a-IconList-iconName {
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  height: 42px;
+}
+
+.u-HCM .a-IconList-item.is-selected {
+  border: 1px solid !important;
+}
+
+.u-HCM .a-IconList-item.is-focused {
+  outline: 1px dotted !important;
+}
+
+/* ==========================================================================
+   Property Editor
+   ========================================================================== */
+.a-LiveTemplateOptions {
+  /* ==========================================================================
+     Property Editor
+     ========================================================================== */
+  /* Property Editor Groups
+     ========================================================================== */
+  /******************************************************************************
+  Color Variables
+  ******************************************************************************/
+  /******************************************************************************
+Properties
+******************************************************************************/
+  /* Property Editor Select List
+   ========================================================================== */
+  /* Text Area
+   ========================================================================== */
+  /******************************************************************************
+Property Editor in Dialogs
+******************************************************************************/
+  /******************************************************************************
+Color Variables
+******************************************************************************/
+  /******************************************************************************
+Property Group Styles
+******************************************************************************/
+}
+
+.a-LiveTemplateOptions .a-LiveTemplateOptions--info {
+  display: none;
+  float: left;
+  color: #79AAC1;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup,
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-header,
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-body {
+  border-color: #6B6B6B !important;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup {
+  background-color: #262626 !important;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-header .a-Icon {
+  color: #c3c3c3;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-header {
+  background-color: #393939 !important;
+  padding: 12px 8px;
+  margin: 0 !important;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  line-height: 16px;
+  font-size: 12px;
+  color: #c3c3c3 !important;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: top;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-body .a-Property {
+  border-color: #323232 !important;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-header.is-focused {
+  -webkit-box-shadow: 2px -1px 0 0 #399bea inset, -2px 1px 0 0 #399bea inset, 0 0 0px 1px #399bea, 0 0 1px 2px rgba(57, 155, 234, 0.25) !important;
+          box-shadow: 2px -1px 0 0 #399bea inset, -2px 1px 0 0 #399bea inset, 0 0 0px 1px #399bea, 0 0 1px 2px rgba(57, 155, 234, 0.25) !important;
+  outline: none;
+  z-index: 100;
+  position: relative;
+  border-color: #399BEA;
+}
+
+.a-LiveTemplateOptions .a-Property {
+  -webkit-transition: -webkit-box-shadow .1s;
+  transition: -webkit-box-shadow .1s;
+  transition: box-shadow .1s;
+  transition: box-shadow .1s, -webkit-box-shadow .1s;
+}
+
+.a-LiveTemplateOptions .a-Property.is-active {
+  background-color: #393e46;
+}
+
+.a-LiveTemplateOptions .a-Property.is-active .a-Property-field {
+  -webkit-box-shadow: 0 0 0 1px rgba(57, 155, 234, 0.5) inset;
+          box-shadow: 0 0 0 1px rgba(57, 155, 234, 0.5) inset;
+}
+
+.a-LiveTemplateOptions .a-Property.is-focused {
+  border-color: rgba(57, 155, 234, 0.5) !important;
+  z-index: 100;
+  position: relative;
+}
+
+.a-LiveTemplateOptions .a-Property-buttonContainer,
+.a-LiveTemplateOptions .a-Property-labelContainer,
+.a-LiveTemplateOptions .a-Property-fieldContainer,
+.a-LiveTemplateOptions .a-Property-unitContainer,
+.a-LiveTemplateOptions .a-PropertyEditor--stacked .a-Property-labelContainer .a-Property-label {
+  padding: 6px 8px;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor--stacked .a-Property--stacked .a-Property-labelContainer .a-Property-label {
+  padding: 4px 0 !important;
+}
+
+.a-LiveTemplateOptions .a-PropertyEditor--stacked .a-Property-labelContainer .a-Property-label {
+  padding-bottom: 0 !important;
+}
+
+.a-LiveTemplateOptions .a-Property.is-error {
+  background-color: #FFEFEF !important;
+}
+
+.a-LiveTemplateOptions .a-Property.is-error .a-Property-label {
+  color: #4C4242;
+}
+
+.a-LiveTemplateOptions .a-Property.is-error .a-Property-field {
+  background-color: #FFF;
+}
+
+.a-LiveTemplateOptions .a-Property.is-error.is-focused {
+  background-color: #FEDFDF !important;
+  -webkit-box-shadow: 0 1px 2px 0px rgba(252, 24, 27, 0.25), 0 -1px 2px 0px rgba(252, 24, 27, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.25) inset !important;
+          box-shadow: 0 1px 2px 0px rgba(252, 24, 27, 0.25), 0 -1px 2px 0px rgba(252, 24, 27, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.25) inset !important;
+  border-color: #FC181B !important;
+}
+
+.a-LiveTemplateOptions .a-Property.is-error .a-Property-labelContainer .a-Icon {
+  margin-right: 4px;
+  color: #FC181B !important;
+}
+
+.a-LiveTemplateOptions .a-Property.is-warning {
+  background-color: #FFF8DF !important;
+}
+
+.a-LiveTemplateOptions .a-Property.is-warning .a-Property-label {
+  color: #463403;
+}
+
+.a-LiveTemplateOptions .a-Property.is-warning .a-Property-field {
+  background-color: #FFF;
+}
+
+.a-LiveTemplateOptions .a-Property.is-warning.is-focused {
+  background-color: #FEEDB9 !important;
+  -webkit-box-shadow: 0 1px 2px 0px rgba(253, 179, 9, 0.25), 0 -1px 2px 0px rgba(253, 179, 9, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.25) inset !important;
+          box-shadow: 0 1px 2px 0px rgba(253, 179, 9, 0.25), 0 -1px 2px 0px rgba(253, 179, 9, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.25) inset !important;
+  border-color: #FDB309 !important;
+}
+
+.a-LiveTemplateOptions .a-Property.is-warning .a-Property-labelContainer .a-Icon {
+  margin-right: 4px;
+  color: #F69F00 !important;
+}
+
+.a-LiveTemplateOptions .a-Property-label,
+.a-LiveTemplateOptions .a-Property-setItemsHeader-header,
+.a-LiveTemplateOptions .a-Property-unit {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 0;
+  color: darkgray;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+.a-LiveTemplateOptions .a-Property-checkbox-label,
+.a-LiveTemplateOptions .a-Property-radio {
+  font-size: 12px;
+  line-height: 16px;
+  color: darkgray;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+.a-LiveTemplateOptions .a-Property-unit {
+  font-size: 11px;
+}
+
+.a-LiveTemplateOptions .a-Property-label--withIcon {
+  line-height: 16px;
+  padding: 4px 0;
+}
+
+.a-LiveTemplateOptions .a-Property-field {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px;
+  height: 24px;
+  background-color: #262626;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset, 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset, 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 2px;
+  border: none;
+}
+
+.a-LiveTemplateOptions .a-Property-field:focus {
+  -webkit-box-shadow: 0 0 0px 1px #399bea inset !important;
+          box-shadow: 0 0 0px 1px #399bea inset !important;
+  outline: none;
+  background-color: #262626;
+}
+
+.a-LiveTemplateOptions .a-Property-field:hover {
+  background-color: #262626;
+}
+
+.a-LiveTemplateOptions .a-Property.is-variable.is-active .a-Icon.icon-variable {
+  color: #404040;
+}
+
+.a-LiveTemplateOptions .a-Property.is-variable .a-Icon.icon-variable {
+  color: #A0A0A0;
+  margin-right: 4px;
+}
+
+.a-LiveTemplateOptions .a-Property-field.is-variable {
+  background-color: #DFEBFB;
+}
+
+.a-LiveTemplateOptions .a-Property.is-warning .a-Property-field:focus {
+  -webkit-box-shadow: 0 0 0px 1px rgba(253, 179, 9, 0.75) inset !important;
+          box-shadow: 0 0 0px 1px rgba(253, 179, 9, 0.75) inset !important;
+}
+
+.a-LiveTemplateOptions .a-Property.is-error .a-Property-field:focus {
+  -webkit-box-shadow: 0 0 0px 1px rgba(252, 24, 27, 0.5) inset !important;
+          box-shadow: 0 0 0px 1px rgba(252, 24, 27, 0.5) inset !important;
+}
+
+.a-LiveTemplateOptions .a-Property-field--select {
+  text-indent: 0.01px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  color: #e5e5e5;
+  padding-right: 30px;
+  text-overflow: ' ';
+  overflow: hidden;
+  border: 1px solid #4c4c4c;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMy4zNTUgNS4yMTZjLS4xOTYtLjE5Ni0uNTEyLS4xOTctLjcwOC0uMDAybC00LjYxMyA0LjU4MS00LjY4Mi00LjY1Yy0uMTk1LS4xOTQtLjUxMS0uMTkyLS43MDcuMDAyLS4xOTQuMTk3LS4xOTMuNTEzLjAwMi43MDhsNS4wMzQgNWMuMDk4LjA5Ny4yMjYuMTQ1LjM1My4xNDVzLjI1NS0uMDQ4LjM1My0uMTQ1bDQuOTY2LTQuOTMyYy4xOTUtLjE5NC4xOTYtLjUxMS4wMDItLjcwN3oiLz48L3N2Zz4=");
+  background-position: 99% 50%;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none !important;
+}
+
+.u-RTL .a-LiveTemplateOptions .a-Property-field--select {
+  padding-right: 4px;
+  padding-left: 30px;
+  background-position: 1% 50%;
+}
+
+.a-LiveTemplateOptions body:not(:-moz-handler-blocked) .a-Property-field--select {
+  padding: 2px 24px 2px 2px;
+}
+
+.u-RTL .a-LiveTemplateOptions body:not(:-moz-handler-blocked) .a-Property-field--select {
+  padding: 2px 2px 2px 24px;
+}
+
+.a-LiveTemplateOptions .is-changed .a-Property-field--select {
+  background: #243223 !important;
+  color: #F5F5F5 !important;
+  border-color: #2c3c2b !important;
+}
+
+.a-LiveTemplateOptions .has-warning .a-Property-field--select {
+  background: #323200 !important;
+  color: #F5F5F5 !important;
+  border-color: #3c3c00 !important;
+}
+
+.a-LiveTemplateOptions .a-Property-readOnly {
+  font-size: 12px;
+  line-height: 2;
+  font-weight: bold;
+  color: darkgray;
+}
+
+.a-LiveTemplateOptions .a-Property-field--readOnly {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.a-LiveTemplateOptions .a-Property-setItemsTable-header {
+  font-weight: normal;
+}
+
+.a-LiveTemplateOptions .a-Property-setItemsTable .a-Property-field {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.a-LiveTemplateOptions .ui-dialog .a-Property {
+  border-color: #3c3c3c;
+}
+
+.a-LiveTemplateOptions .a-PropertyGroup-item {
+  border-top-color: #505050;
+}
+
+.a-LiveTemplateOptions ul.apex-rds li {
+  margin-right: 1px;
+  margin-left: 0;
+  background: #191919;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  margin-top: 8px;
+}
+
+.a-LiveTemplateOptions ul.apex-rds li a {
+  padding: 12px 8px;
+  color: #E0E0E0;
+}
+
+.a-LiveTemplateOptions li.apex-rds-selected {
+  background: #393939 !important;
+}
+
+.a-LiveTemplateOptions ul.apex-rds li.apex-rds-selected {
+  background: #393939 !important;
+}
+
+.a-LiveTemplateOptions ul.apex-rds .apex-rds-selected a {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.a-LiveTemplateOptions--inner-message {
+  background-color: #393939;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/* ==========================================================================
+   Markdown Editor
+   ========================================================================== */
+.a-MDEditor .a-Toolbar {
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #F8F8F8;
+}
+
+.a-MDEditor-previewPanel,
+.a-MDEditor textarea.apex-item-textarea,
+.a-MDEditor .CodeMirror {
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+}
+
+.a-MDEditor-previewPanel:focus, .a-MDEditor-previewPanel.CodeMirror-focused,
+.a-MDEditor textarea.apex-item-textarea:focus,
+.a-MDEditor textarea.apex-item-textarea.CodeMirror-focused,
+.a-MDEditor .CodeMirror:focus,
+.a-MDEditor .CodeMirror.CodeMirror-focused {
+  border-color: #0572CE;
+}
+
+/* ==========================================================================
+   Markdownified
+   ========================================================================== */
+.is-markdownified h1,
+.is-markdownified h2,
+.is-markdownified h3,
+.is-markdownified h4,
+.is-markdownified h5,
+.is-markdownified h6 {
+  color: inherit;
+}
+
+.is-markdownified hr {
+  background: none;
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-markdownified blockquote {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.is-markdownified code {
+  background-color: rgba(0, 0, 0, 0.025);
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.05) 0 0 0 1px;
+          box-shadow: inset rgba(0, 0, 0, 0.05) 0 0 0 1px;
+}
+
+.is-markdownified pre {
+  background-color: rgba(0, 0, 0, 0.025);
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.05) 0 0 0 1px;
+          box-shadow: inset rgba(0, 0, 0, 0.05) 0 0 0 1px;
+}
+
+.is-markdownified pre code {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.is-markdownified table {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.075);
+          box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.075);
+}
+
+.is-markdownified table th {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+.is-markdownified table th,
+.is-markdownified table td {
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+}
+
+.is-markdownified table tr:hover td {
+  background-color: rgba(0, 0, 0, 0.0125);
+}
+
+.is-markdownified table tr:hover th {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/* ==========================================================================
+   Menu Bar
+   ========================================================================== */
+.a-MenuBar {
+  background-color: #F0F0F0;
+}
+
+.a-MenuBar-label {
+  padding: 8px;
+  color: #404040;
+}
+
+.a-MenuBar-item {
+  border-right: 1px solid #D0D0D0;
+  border-left: 1px solid #D0D0D0;
+  margin-left: -1px;
+}
+
+.a-MenuBar-item:first-child {
+  margin-left: 0;
+}
+
+.a-MenuBar-item.a-Menu--split > .a-Menu-subMenuCol,
+.a-MenuBar.u-rtl .a-MenuBar-item.a-Menu--split > .a-Menu-subMenuCol {
+  border-color: #E0E0E0;
+  cursor: pointer;
+}
+
+.a-MenuBar-item.is-disabled .a-MenuBar-label {
+  color: #A0A0A0;
+}
+
+.a-MenuBar-item:hover {
+  background-color: #FFF;
+}
+
+.a-MenuBar-item.is-expanded {
+  background-color: #FFF;
+}
+
+.a-MenuBar-item.is-focused {
+  -webkit-box-shadow: 0 0 0 2px #0572ce inset;
+          box-shadow: 0 0 0 2px #0572ce inset;
+  outline: none;
+}
+
+.lte-ie9 .a-MenuBar-item.is-focused,
+.lte-ie9 .a-Menu-item.is-focused,
+.ie9 .a-MenuBar-item.is-focused,
+.ie9 .a-Menu-item.is-focused {
+  outline: 1px dotted;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .a-MenuBar-item.is-focused,
+  .a-Menu-item.is-focused {
+    outline: 1px dotted;
+  }
+}
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+.a-Menu-content {
+  border-color: #A0A0A0;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 8px 0;
+  background-color: #fff;
+}
+
+.u-callout:before {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 1px #A0A0A0;
+          box-shadow: 0 0 0 1px #A0A0A0;
+}
+
+body .ui-dialog.ui-dialog--popup .ui-dialog-content {
+  background-color: transparent;
+}
+
+.a-Menu .a-Menu {
+  margin-top: -9px;
+}
+
+.a-Menu .a-Menu-item {
+  color: #404040;
+}
+
+.a-Menu-hSeparator {
+  border-color: #F0F0F0;
+}
+
+.a-Menu--current {
+  background-color: #fff;
+}
+
+.a-Menu .a-Menu-item.is-focused,
+.a-Menu .a-Menu-item.is-expanded {
+  background-color: #0572CE;
+  color: #FFF;
+}
+
+.a-Menu .a-Menu-item.is-focused > .a-Menu-inner .a-Menu-statusCol,
+.a-Menu .a-Menu-item.is-focused > .a-Menu-inner .a-Menu-accel,
+.a-Menu .a-Menu-item.is-expanded > .a-Menu-inner .a-Menu-statusCol,
+.a-Menu .a-Menu-item.is-expanded > .a-Menu-inner .a-Menu-accel {
+  color: #FFF;
+}
+
+.a-Menu .a-Menu-item.is-disabled.is-focused {
+  background-color: #F8F8F8;
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.15) inset;
+          box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.a-Menu .a-Menu-item.is-disabled.is-focused > .a-Menu-inner .a-Menu-statusCol,
+.a-Menu .a-Menu-item.is-disabled.is-focused > .a-Menu-inner .a-Menu-accel {
+  color: rgba(64, 64, 64, 0.5);
+  opacity: 1;
+}
+
+.a-Menu .a-Menu-item.a-Menu-item--default .a-Menu-label {
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   Scrolling Buttons
+   ========================================================================== */
+.a-Menu-scrollBtn {
+  background-color: #F0F0F0;
+}
+
+.a-Menu-scrollBtn--up {
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.a-Menu-scrollBtn--down {
+  -webkit-box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.a-Menu-scrollBtn.is-active {
+  background-color: #0572CE;
+  color: #FFF;
+}
+
+.a-Menu-scrollBtn.is-disabled {
+  zoom: 1;
+  filter: alpha(opacity=25);
+  opacity: 0.25;
+}
+
+.a-Menu-scrollBtn .a-Icon {
+  margin: 0 auto;
+  display: block;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/* ==========================================================================
+   Popup LOV
+   ========================================================================== */
+.apex-item-group--popup-lov .apex-item-multi-item > span {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.apex-item-group--popup-lov .apex-item-multi-item.is-active > span {
+  -webkit-box-shadow: 0 0 0 1px #0572ce inset;
+          box-shadow: 0 0 0 1px #0572ce inset;
+}
+
+.apex-item-group--popup-lov .apex-item-multi-remove {
+  background-color: transparent;
+}
+
+.apex-item-group--popup-lov .apex-item-multi-remove:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.apex-item-text.a-PopupLOV-search,
+.apex-item-text.apex-item-popup-lov,
+.apex-item-multi {
+  border-color: #E0E0E0;
+  background-color: #f9f9f9;
+}
+
+.apex-item-text.a-PopupLOV-search:focus, .apex-item-text.a-PopupLOV-search.is-focused,
+.apex-item-text.apex-item-popup-lov:focus,
+.apex-item-text.apex-item-popup-lov.is-focused,
+.apex-item-multi:focus,
+.apex-item-multi.is-focused {
+  color: #000;
+  background-color: #fff;
+  border-color: #0572ce;
+}
+
+.apex-item-text.a-PopupLOV-search:focus + .a-Button--popupLOV, .apex-item-text.a-PopupLOV-search.is-focused + .a-Button--popupLOV,
+.apex-item-text.apex-item-popup-lov:focus + .a-Button--popupLOV,
+.apex-item-text.apex-item-popup-lov.is-focused + .a-Button--popupLOV,
+.apex-item-multi:focus + .a-Button--popupLOV,
+.apex-item-multi.is-focused + .a-Button--popupLOV {
+  -webkit-box-shadow: 0 0 0 1px #0572ce inset;
+          box-shadow: 0 0 0 1px #0572ce inset;
+}
+
+.ui-dialog .ui-dialog-content.a-PopupLOV-dialog {
+  background-color: #fff;
+}
+
+.a-PopupLOV-doSearch:focus {
+  -webkit-box-shadow: 0 0 0 1px #0572ce inset;
+          box-shadow: 0 0 0 1px #0572ce inset;
+}
+
+.a-PopupLOV-searchBar,
+.a-PopupLOV-clear {
+  border-bottom-color: #e0e0e0;
+}
+
+.a-PopupLOV-clearButton {
+  background-color: transparent;
+  color: inherit;
+}
+
+.a-PopupLOV-clearButton:hover {
+  color: #FFFFFF;
+  background-color: #0572CE;
+}
+
+.a-PopupLOV-clearButton:focus {
+  -webkit-box-shadow: 0 0 0 1px #0572ce inset;
+          box-shadow: 0 0 0 1px #0572ce inset;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+
+File Name:    RecordView.scss
+Purpose:      Base styles for Record View (used in Interactive Grid component)
+
+******************************************************************************/
+/* Toolbar
+   --
+   Based on the Toolbar Component
+   ========================================================================== */
+.a-RV-toolbar {
+  border-color: #D0D0D0;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/******************************************************************************
+Splitter Images
+******************************************************************************/
+.a-Splitter-barV.is-focused.is-collapsed .a-Splitter-thumb,
+.a-Splitter-barV.is-focused.a-Splitter--end .a-Splitter-thumb {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMjQgOCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyIDZsLTQtNGg4eiIvPjwvc3ZnPg==");
+}
+
+.a-Splitter-barH.is-focused .a-Splitter-thumb,
+.a-Splitter-barH.is-focused.a-Splitter--end.is-collapsed .a-Splitter-thumb {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgOCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIgMTJsNC00djh6Ii8+PC9zdmc+");
+}
+
+.a-Splitter-barH.is-focused.is-collapsed .a-Splitter-thumb,
+.a-Splitter-barH.is-focused.a-Splitter--end .a-Splitter-thumb {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgOCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTYgMTJsLTQgNHYtOHoiLz48L3N2Zz4=");
+}
+
+.a-Splitter-barV.is-focused .a-Splitter-thumb,
+.a-Splitter-barV.is-focused.a-Splitter--end.is-collapsed .a-Splitter-thumb {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMjQgOCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyIDJsNCA0aC04eiIvPjwvc3ZnPg==");
+}
+
+/******************************************************************************
+Splitter Styles
+******************************************************************************/
+/**
+ * Splitter Bar
+ */
+.a-Splitter-barH,
+.a-Splitter-barV,
+.a-Splitter-barH.is-disabled:hover,
+.a-Splitter-barV.is-disabled:hover {
+  background-color: #EAEAEA;
+}
+
+.a-Splitter-barH {
+  -webkit-box-shadow: 1px 0 0 #E0E0E0 inset, -1px 0 0 #E0E0E0 inset;
+          box-shadow: 1px 0 0 #E0E0E0 inset, -1px 0 0 #E0E0E0 inset;
+}
+
+.a-Splitter-barV {
+  -webkit-box-shadow: 0 1px 0 #E0E0E0 inset, 0 -1px 0 #E0E0E0 inset;
+          box-shadow: 0 1px 0 #E0E0E0 inset, 0 -1px 0 #E0E0E0 inset;
+}
+
+/**
+ * Splitter Bar Hover and Focus States
+ */
+.a-Splitter-barH:hover,
+.a-Splitter-barV:hover {
+  background-color: #FFF;
+}
+
+.a-Splitter-barH.is-active,
+.a-Splitter-barV.is-active {
+  -webkit-box-shadow: 0 0 0 1px #399bea inset, 0 0 2px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 0 0 1px #399bea inset, 0 0 2px rgba(0, 0, 0, 0.1) !important;
+  background-color: #FFF;
+  z-index: 1000;
+}
+
+.a-Splitter-barH.is-focused,
+.a-Splitter-barV.is-focused {
+  -webkit-box-shadow: 0 0 0 1px #399bea inset, 0 0 2px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 0 0 1px #399bea inset, 0 0 2px rgba(0, 0, 0, 0.1) !important;
+  background-color: #399BEA;
+}
+
+.a-Splitter-barH.is-disabled .a-Splitter-thumb,
+.a-Splitter-barV.is-disabled .a-Splitter-thumb {
+  background-image: none !important;
+}
+
+/**
+ * Splitter Bar Button Focus and Hovers
+ */
+.a-Splitter-barH button:hover,
+.a-Splitter-barV button:hover,
+.a-Splitter-barH button:hover:focus,
+.a-Splitter-barV button:hover:focus {
+  -webkit-box-shadow: 0 0 0 1px #399bea inset;
+          box-shadow: 0 0 0 1px #399bea inset;
+  background-color: #FFF;
+}
+
+.a-Splitter-barH button:focus,
+.a-Splitter-barV button:focus {
+  outline: none;
+}
+
+.a-Splitter-barH button:focus {
+  -webkit-box-shadow: 1px 0 0 #399BEA inset, -1px 0 0 #399BEA inset;
+          box-shadow: 1px 0 0 #399BEA inset, -1px 0 0 #399BEA inset;
+}
+
+.a-Splitter-barV button:focus {
+  -webkit-box-shadow: 0 1px 0 #399BEA inset, 0 -1px 0 #399BEA inset;
+          box-shadow: 0 1px 0 #399BEA inset, 0 -1px 0 #399BEA inset;
+}
+
+.a-Splitter-barH.is-focused button:hover,
+.a-Splitter-barV.is-focused button:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.a-Splitter-barH.is-disabled button:hover,
+.a-Splitter-barV.is-disabled button:hover {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/* Star Rating
+   ========================================================================== */
+.a-StarRating-stars {
+  color: rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.a-StarRating-stars.is-focused {
+  -webkit-box-shadow: 0 0 0 1px currentColor inset;
+          box-shadow: 0 0 0 1px currentColor inset;
+}
+
+.a-StarRating-stars.is-focused .a-StarRating-stars-fg .a-StarRating-star {
+  text-shadow: 0 0 2px currentColor;
+}
+
+.a-StarRating-stars-fg {
+  color: #0572CE;
+}
+
+.a-StarRating-value {
+  color: #444444;
+}
+
+.a-StarRating-clear {
+  border-radius: 2px;
+  opacity: .5;
+}
+
+.a-StarRating-clear:hover, .a-StarRating-clear:focus {
+  opacity: 1;
+}
+
+.a-StarRating-clear:focus {
+  -webkit-box-shadow: inset #0572CE 0 0 0 1px;
+          box-shadow: inset #0572CE 0 0 0 1px;
+}
+
+.a-StarRating--disabled .a-StarRating-stars-fg {
+  color: initial;
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/* Checkbox Switch
+   ========================================================================== */
+.a-Switch-toggle {
+  border-radius: 24px;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.1) 0 0 0 1px;
+          box-shadow: inset rgba(0, 0, 0, 0.1) 0 0 0 1px;
+  background-color: #8C8C8C;
+}
+
+.a-Switch-toggle:before {
+  border-radius: 100%;
+  background-color: #fff;
+  -webkit-transform-origin: left 50%;
+          transform-origin: left 50%;
+  border-color: transparent;
+}
+
+.a-Switch:hover .a-Switch-toggle {
+  background-color: #3F3F3F;
+}
+
+.a-Switch input[type=checkbox]:focus + .a-Switch-toggle {
+  -webkit-box-shadow: #0572CE 0 0 0 1px, inset #fff 0 0 0 1px;
+          box-shadow: #0572CE 0 0 0 1px, inset #fff 0 0 0 1px;
+}
+
+.a-Switch input[type=checkbox]:checked + .a-Switch-toggle {
+  background-color: #0572CE;
+}
+
+.a-Switch:hover input[type=checkbox]:checked + .a-Switch-toggle {
+  background-color: #0466B8;
+}
+
+.a-Switch input[type=checkbox]:indeterminate + .a-Switch-toggle:before {
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-box-shadow: inset #fff 0 0 0 1px;
+          box-shadow: inset #fff 0 0 0 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/* Variables
+   ========================================================================== */
+/* Toolbar Groups
+   ========================================================================== */
+.a-Toolbar-group {
+  border-color: #F0F0F0;
+}
+
+/* Toolbar Text Input
+   ========================================================================== */
+.a-Toolbar-inputText {
+  -webkit-box-shadow: 0 0 0 1px #E4E4E4 inset;
+          box-shadow: 0 0 0 1px #E4E4E4 inset;
+}
+
+.a-Toolbar-inputText:focus {
+  -webkit-box-shadow: 0 0 0 1px #0572CE inset, 0 0 1px 1px rgba(5, 114, 206, 0.25);
+          box-shadow: 0 0 0 1px #0572CE inset, 0 0 1px 1px rgba(5, 114, 206, 0.25);
+}
+
+/* Toolbar Select Lists
+   ========================================================================== */
+.a-Toolbar-selectList {
+  border-color: #E4E4E4;
+  background-color: #F4F4F4;
+  color: #404040;
+}
+
+/* Toolbar Button Groups (Including radios, checkboxes)
+   ========================================================================== */
+.a-Toolbar-radioGroup input:focus + .a-Button,
+.a-Toolbar-toggleButton input:focus + .a-Button {
+  -webkit-box-shadow: 0 0 0 1px #0572CE inset, 0 0 1px 1px rgba(5, 114, 206, 0.25);
+          box-shadow: 0 0 0 1px #0572CE inset, 0 0 1px 1px rgba(5, 114, 206, 0.25);
+}
+
+/**
+ * Import Compass and Theme Variables
+ */
+/* ==========================================================================
+   Theme Configuration File
+   ========================================================================== */
+/**
+ * Base Colors
+ *
+ * Description:
+ * Provides a base for the UI.
+ *
+ * Usage:
+ * General UI Background, Region Headers, Buttons
+ */
+/**
+ * Highlight Colors
+ *
+ * Description:
+ * Used for providing emphasis or importance to UI components.
+ *
+ * Usage:
+ * Region Headers, Primary / Hot Buttons
+ */
+/**
+ * Accent and Status Colors
+ *
+ * Description:
+ * Used for indicating state-based UI components, status, or accents.
+ *
+ * Usage:
+ * Warnings, Errors, Danger Text, Success, Focus
+ */
+/* ==========================================================================
+ Tree Component
+ ========================================================================== */
+.a-TreeView {
+  position: relative;
+  /* so that it works well in a scrolling container */
+}
+
+.a-TreeView.is-disabled {
+  background-color: #F0F0F0;
+}
+
+/* ==========================================================================
+Toggle Control
+ ========================================================================== */
+.a-TreeView-toggle {
+  color: #A0A0A0;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/*
+ * Active Tree Node Toggle
+ */
+.a-TreeView-row.is-selected + .a-TreeView-toggle {
+  color: #FFF;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+ * Row Active when Dragging
+ */
+.a-TreeView-row.is-active {
+  background-color: #FFFFA3;
+}
+
+.a-TreeView-content.is-selected.is-active {
+  background-color: #FFFFA3;
+}
+
+.a-TreeView-content.is-selected.is-active .a-TreeView-label {
+  color: #404040;
+}
+
+/* ==========================================================================
+Tree Row
+---
+Empty Element that is used to provide highlighting of tree
+ ========================================================================== */
+.a-TreeView-row.is-selected,
+.a-TreeView-row.is-selected.is-hover {
+  background-color: #2D7BBB;
+}
+
+.a-TreeView-row.is-focused {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px rgba(57, 155, 234, 0.5);
+          box-shadow: 0 0 0 2px rgba(57, 155, 234, 0.5);
+}
+
+.a-TreeView-row.is-focused,
+.a-TreeView-row.is-selected.is-focused {
+  background-color: #399BEA;
+}
+
+.a-TreeView-row.is-hover {
+  background-color: #F8F8F8;
+}
+
+/* ==========================================================================
+Tree Node Content
+ ========================================================================== */
+.a-TreeView-content.is-selected .a-TreeView-label,
+.a-TreeView-content.is-selected .a-Icon {
+  color: #FFF;
+}
+
+/* ==========================================================================
+Tree Node Label
+ ========================================================================== */
+.a-TreeView-label,
+.a-TreeView-label input {
+  color: #404040;
+}
+
+/* ==========================================================================
+Tree Placeholder
+---
+Used when dragging / dropping
+ ========================================================================== */
+.a-TreeView-placeholder > .a-TreeView-row {
+  background-color: #FFFFA3;
+}
+
+.a-TreeView-dragHelper {
+  border-color: #9EA9B7;
+  background-color: #E5EEFB;
+}
